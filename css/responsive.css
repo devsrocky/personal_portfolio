@@ -1,0 +1,211 @@
+:root{
+    /*-- Colors ---*/
+        --primary: #ffa726;
+        --secondary : #131930;
+        --text: #92989b;
+        --theme: #263238;
+        --white: #ffffff;
+        --gray: #79828d;
+        --dark_normal: #07273BC7;
+        --border: #c7c7c791;
+        --bgColor: #f7f4f4;
+        --sm: #b9bbbd;
+
+    /*-- size ---*/
+        --px_2: 2px;
+        --px_3: 3px;
+        --px_4: 4px;
+        --px_5: 5px;
+        --px_10: 10px;
+        --px_12: 12px;
+        --px_14: 14px;
+        --px_16: 16px;
+        --px_18: 18px;
+        --px_25: 25px;
+        --px_30: 30px;
+        --px_35: 35px;
+        --px_40: 40px;
+        --px_50: 50px;
+        --px_60: 60px;
+        --pr_50: 50%;
+        --pr_100: 100%
+    /*-- transition ---*/
+        --fw_4: 400;
+        --fw_5: 500;
+        --fw_6: 600;
+        --fw_7: 700;
+        --fw_8: 800;
+        --fw_9: 900;
+        --fw_b: bold;
+
+     /*-- transition ---*/
+        --tr_2: all .2s ease;
+        --tr_3: all .3s ease;
+        --tr_5: all .5s ease;
+        --tr_6: all .6s ease;
+    /*-- Font family --*/
+        --ff: 'Outfit' ,sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .nav_menu {
+        position: fixed;
+        width: 100%;
+        height: 350px;
+        top: 90px;
+        left: 0;
+        flex-direction: column;
+        gap: 15px;
+        background: var(--theme);
+        z-index: 1111;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav_menu.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav_menu a{
+        position: relative;
+        left: -10%;
+
+        animation: men 1s forwards;
+        animation-delay: calc(0.4s * var(--i));
+        opacity: 0;
+    }
+    @keyframes men {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            left: 5%;
+        }
+    }
+    .social {
+        position: absolute;
+        top: 275px;
+        left: 4%;
+        z-index: 11111;
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .social.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .social i{
+        animation: icos 2s forwards;
+        animation-delay: calc(1s * var(--i));
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    @keyframes icos {
+        0%{
+            opacity: 0;
+            transform: scale(0.1);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    .humbarger{
+        opacity: 1;
+    }
+    .banner_title{
+        font-size: var(--px_35);
+        line-height: var(--px_40);
+    }
+    .intro_text{
+        padding: 20px 0;
+    }
+    .box_1{
+        width: 80%;
+        height: 100%;
+        top: 0 !important;
+        left: 60% !important;
+        transform: translateX(-57%);
+    }
+    .box_2{
+        width: 250px;
+        height: 350px;
+    }
+    .box_2 img{
+        width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .web_programming, .wordpress_cms {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media(max-width: 800px){
+    .self_banner {
+        background: url(../upload/banner\ bg.jpg) no-repeat center;
+        background-size: cover;
+        height: 180vh;
+        position: relative;
+        z-index: 1;
+    }
+    .intro_contents {
+        height: 100%;
+        width: 100%;
+        top: 100% !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro_image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: -85%;
+        position: relative;
+        left: 0;
+    }
+    
+    .container.grid_2 {
+        display: block;
+        height: 100vh;
+    }
+    .box_1 {
+        width: 90%;
+        height: 100%;
+        top: -12px !important;
+        left: 58% !important;
+        transform: translateX(-57%);
+    }
+    .box_2 {
+        width: 90%;
+        height: 100%;
+        right: 65px;
+        top: -41px;
+        transform: translateX(25px);
+    }
+    .box_2 img {
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+    .web_programming, .wordpress_cms {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .about_skills {
+        top: 71% !important;
+        right: 20px;
+    }
+    .about_content {
+        padding: 0;
+        margin-top: 40px;
+    }
+
+}
