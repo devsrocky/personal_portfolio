@@ -44,11 +44,10 @@
 
             <div class="nav_menu">
                 <a class="active" href="#" style="--i:1;">Home</a>
-                <a href="#" style="--i:2;">Service</a>
-                <a href="#" style="--i:3;">Portfolio</a>
-                <a href="#" style="--i:4;">Contact</a>
-                <a href="#" style="--i:5;">About</a>
-                <a href="#" style="--i:6;">Blog</a>
+                <a href="#Service" style="--i:2;">Service</a>
+                <a href="#Contact" style="--i:3;">Contact</a>
+                <a href="#Portfolio" style="--i:4;">Portfolio</a>
+                <a href="#About" style="--i:5;">About</a>
             </div>
 
             <div class="social">
@@ -67,8 +66,8 @@
                 <h1 class="banner_title">A <span>Marn</span> Stack And<span> WordPress</span> Developer</h1>
                 <p class="intro_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam assumenda rem itaque delectus officia.</p>
                 <div class="banner_btns">
-                    <button class="btn btn_primary">Here is my CV</button>
-                    <button class="btn btn_secondary banner_btn"><i class='bx bx-play-circle'></i> Watch me</button>
+                    <button class="btn btn_primary" id="showCV">Here is my CV</button>
+                    <a href="https://www.youtube.com/channel/UCj20LH9G8hEoc5rGt0IvLdw" class="btn btn_secondary banner_btn"><i class='bx bx-play-circle'></i> Watch me</a>
                 </div>
             </div>
             <div class="intro_image"><!--Image-->
@@ -86,35 +85,45 @@
                 </div>
             </div>
         </div>
-
-        <div class="contact_through">
-            <ul class="through_item">
-                <li>
-                    <a href="#">
-                        <i class='bx bx-cart-add'></i>
-                        <span>Hire</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-support'></i>
-                        <span>Support</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bx-help-circle'></i>
-                        <span>Help</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
      </section>
 
-     
+     <div class="cv_pop">
+        <div class="pop_header">
+            <h3>Welcome to my Cv</h3>
+            <i class='bx bx-x close'></i>
+        </div>
+        <div class="cv_body">
+            <img src="../upload/cv.jpeg" alt="">
+        </div>
+     </div>
+
+
+     <!-- Contact through-->
+     <div class="contact_through">
+        <ul class="through_item">
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart-add'></i>
+                    <span>Hire</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-support'></i>
+                    <span>Support</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-help-circle'></i>
+                    <span>Help</span>
+                </a>
+            </li>
+        </ul>
+    </div>
      <!-- About section -->
-     <section class="about">
-        <div class="container grid_2">
+     <section class="about" id="About">
+        <div class="container about_grid">
             <div class="about_image">
                 <div class="box">
                     <div class="anim_box">
@@ -175,79 +184,229 @@
                 <div class="skills_are">
                     <h3>Web Programming</h3>
                     <div class="web_programming">
-                        <div class="key">
+                        <div class="key" style="--i:1;">
                             <img src="../skills img/html.png" alt="HTML">
                             <span>HTML<sup>5</sup></span>
                         </div>
-                        <div class="key">
+                        <div class="key" style="--i:2;">
                             <img src="../skills img/css.png" alt="css">
                             <span>CSS<sup>3</sup></span>
                         </div>
-                        <div class="key">
+                        <div class="key" style="--i:3;">
                             <img src="../skills img/bootstrap.png" alt="bootstrap">
                             <span>Bootstrap<sup>5</sup></span>
                         </div>
-                        <div class="key">
+                        <div class="key" style="--i:4;">
                             <img src="../skills img/javascript.png" alt="javascript">
                             <span>JavaScript<sup>ES6</sup></span>
                         </div>
-                        <div class="key">
+                        <div class="key" style="--i:5;">
                             <img src="../skills img/react js.png" alt="React">
                             <span>React<sup>JS</sup></span>
                         </div>
-                        <div class="key">
+                        <div class="key" style="--i:6;">
                             <img src="../skills img/nude js.jpg" alt="NudeJS">
                             <span>Nude<sup>JS</sup></span>
                         </div>
-                        <div class="key">
+                        <div class="key" style="--i:7;">
                             <img src="../skills img/angualr js.jpg" alt="AngularJS">
                             <span>Angular<sup>JS</sup></span>
                         </div>
-                        <div class="key">
+                        <div class="key" style="--i:8;">
                             <img src="../skills img/mongoDB.jpg" alt="mongoDB">
                             <span>Mongo<sup>DB</sup></span>
                         </div>
 
-                        <div class="key">
+                        <div class="key" style="--i:9;">
                             <img src="../skills img/nude js.jpg" alt="NudeJS">
                             <span>Nude<sup>JS</sup></span>
                         </div>
                     </div>
                     <h3>WordPress CMS</h3>
                     <div class="wordpress_cms">
-                        <div class="key">
-                            <img src="../skills img/nude js.jpg" alt="NudeJS">
-                            <span>Nude<sup>JS</sup></span>
+                        <div class="key" style="--i:10;">
+                            <img src="../skills img/wp.png" alt="WP">
+                            <span>WordPress<sup>CMS</sup></span>
                         </div>
-                        <div class="key">
-                            <img src="../skills img/nude js.jpg" alt="NudeJS">
-                            <span>Nude<sup>JS</sup></span>
+                        <div class="key" style="--i:11;">
+                            <img src="../skills img/elementor.jpg" alt="elementor">
+                            <span>Elementor<sup>PRO</sup></span>
                         </div>
-                        <div class="key">
-                            <img src="../skills img/nude js.jpg" alt="NudeJS">
-                            <span>Nude<sup>JS</sup></span>
+                        <div class="key" style="--i:12;">
+                            <img src="../skills img/crocoblock.jpg" alt="crocoblock">
+                            <span>CrocoBlock<sup>set</sup></span>
                         </div>
-                        <div class="key">
-                            <img src="../skills img/nude js.jpg" alt="NudeJS">
-                            <span>Nude<sup>JS</sup></span>
+                        <div class="key" style="--i:13;">
+                            <img src="../skills img/contact form 7.jpg" alt="Contact 7">
+                            <span>Contact<sup>7</sup></span>
                         </div>
-                        <div class="key">
-                            <img src="../skills img/nude js.jpg" alt="NudeJS">
-                            <span>Nude<sup>JS</sup></span>
+                        <div class="key" style="--i:14;">
+                            <img src="../skills img/astra.png" alt="Astra">
+                            <span>Astra<sup>Theme</sup></span>
+                        </div>
+                        <div class="key" style="--i:15;">
+                            <img src="../skills img/woocommerce.png" alt="Woo">
+                            <span>woocommerce</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
      </section>
-
+<br>
      <!-- Services section -->
 
-     <section class="services">
+     <section class="services" id="Service">
         <div class="container">
-            <h1>Hello git</h1>
+            <h1 class="main_title">Services</h1>
+            <br>
+            <br>
+
+            <div class="serv_items">
+                <div class="serv">
+                    <p class="Card_hover">You'll get better design that will attract to your eys.</p>
+                        <img src="../icons/front end.png" alt="">
+                        <h4>Frontend design</h4>
+                </div>
+                <div class="serv">
+                    <p class="Card_hover">You'll get better design that will attract to your eys.</p>
+                    <img src="../icons/backend.png" alt="">
+                    <h4>Backend development</h4>
+                </div>
+                <div class="serv">
+                    <p class="Card_hover">You'll get better design that will attract to your eys.</p>
+                    <img src="../icons/device responsive.png" alt="">
+                    <h4>Friendly responsive</h4>
+                </div>
+                <div class="serv">
+                    <p class="Card_hover">You'll get better design that will attract to your eys.</p>
+                    <img src="../icons/wordpress.png" alt="">
+                    <h4>Wordpress website</h4>
+                </div>
+                <div class="serv">
+                    <p class="Card_hover">You'll get better design that will attract to your eys.</p>
+                    <img src="../icons/speed opt.png" alt="">
+                    <h4>Speed optimization</h4>
+                </div>
+                <div class="serv">
+                    <p class="Card_hover">You'll get better design that will attract to your eys.</p>
+                    <img src="../icons/delivery.png" alt="">
+                    <h4>On time delivery</h4>
+                </div>
+            </div>
         </div>
      </section>
+
+          <!-- Portfolio section -->
+          <section class="portfolio" id="Portfolio">
+            <div class="container">
+                <h1 class="main_title">Portfolio</h1>
+                <div class="under_title">
+                    <h3 class="small_title">Latest Work Portfoio</h3>
+                    
+                    <p class="text_m">if you want more examples then drop a message</p>
+                </div>
+
+                <div class="portfolio_items">
+                    <portfolio>
+                        <div class="port_image">
+                            <img src="../upload/real estate.jpeg" alt="">
+                        </div>
+                        <div class="port_contents">
+                            <h3 class="small_title">Latest built website</h3>
+                            <h2>Real Estate</h2>
+                            <p class="text_m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat illo.</p>
+                            <a href="#" class="btn_more">Learn more</a>
+                        </div>
+                    </portfolio>
+                    <portfolio>
+                        <div class="port_image">
+                            <img src="../upload/doctor appointment.jpeg" alt="">
+                        </div>
+                        <div class="port_contents">
+                            <h3 class="small_title">Latest built website</h3>
+                            <h2>Appointment booking</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat illo.</p>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </portfolio>
+                    <portfolio>
+                        <div class="port_image">
+                            <img src="../upload/agency.jpeg" alt="">
+                        </div>
+                        <div class="port_contents">
+                            <h3 class="small_title">Latest built website</h3>
+                            <h2>Travel agency</h2>
+                            <p class="text_m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat illo.</p>
+                            <a href="#" class="btn_more">Learn more</a>
+                        </div>
+                    </portfolio>
+                    <portfolio>
+                        <div class="port_image">
+                            <img src="../upload/eCommerc store.jpeg" alt="">
+                        </div>
+                        <div class="port_contents">
+                            <h3 class="small_title">Latest built website</h3>
+                            <h2>eCommerce store</h2>
+                            <p class="text_m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugiat illo.</p>
+                            <a href="#" class="btn_more">Learn more</a>
+                        </div>
+                    </portfolio>
+                </div>
+            </div>
+          </section>
+
+          <div class="banner_bottom">
+
+          </div>
+          <!-- Contact info section -->
+          <section class="contact" id="Contact">
+                <div class="container over_style">
+                    <h1 class="main_title" style="color: #fff !important;">Portfolio</h1>
+                    <div class="d_flex">
+                        <div class="info">
+                            <h4>Contact info</h4>
+                            <ul class="con_list">
+                                <li class="bx bxs-map">5282-Ghoraghat, Dinajpur | Bangladesh</li>
+                                <li class="bx bxs-phone">+8801709200987</li>
+                                <li class="bx bx-envelope">devsrocky1@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="form">
+                            <h4 class="use_m">Drop a meassage</h4>
+                            <form action="#">
+                                <div class="form_grid">
+                                    <input type="text" placeholder="Your name" required>
+                                    <input type="number" placeholder="Phone" required>
+                                </div>
+                                <div class="form_grid">
+                                    <input type="email" placeholder="E-mail address" required>
+                                    <select  required>
+                                        <option value="topic">Topic</option>
+                                        <option value="consultant">Free consultant</option>
+                                        <option value="website">Need a website</option>
+                                        <option value="Hire">Hire for WordPress website</option>
+                                        <option value="Speed">Speed optimization</option>
+                                    </select>
+                                </div>
+                                <textarea name="name" placeholder="tell us about you " required></textarea>
+                                <button class="btn btn_primary" type="submit">Send it now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+          </section>
+
+          <!-- Go top -->
+          <div class="go_top">
+                <a href="#" class=""><i class='bx bx-up-arrow-alt'></i></a>
+          </div>
+
+          <!-- footer -->
+          <footer>
+                <p>copyright © 2023 powered by devsrocky</p>
+          </footer>
+
 
     <script src="../main/portfolio.js"></script>
 </body>

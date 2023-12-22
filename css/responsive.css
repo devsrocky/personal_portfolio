@@ -141,6 +141,23 @@
     .web_programming, .wordpress_cms {
         grid-template-columns: repeat(3, 1fr);
     }
+    .serv_items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about_grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about_content {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+    .portfolio {
+        padding: 40px 0px;
+    }
+    .text_m{
+        margin-bottom: 0;
+    }
 
 }
 @media(max-width: 800px){
@@ -207,5 +224,74 @@
         padding: 0;
         margin-top: 40px;
     }
+    .portfolio_items{
+        grid-template-columns: 1fr;
+    }
+    .serv_items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .port_contents{
+        padding: var(--px_10);
+    }
+    .d_flex{
+        display: block;
+    }
+    .info{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        padding: 0 !important;
+        margin-top: var(--px_35);
+    }
+    .form h4 {
+        margin-bottom: var(--px_18);
+    }
+    .cv_pop {
+        width: 85%
+    }
 
+}
+
+@media(max-width: 600px){
+    .box_1 {
+        width: 70%;
+        height: 80%;
+        top: -5px !important;
+        left: 56% !important;
+    }
+    .box_2 {
+        width: 70%;
+        height: 80%;
+        left: 35px;
+        top: -30px;
+    }
+    .box_2 img {
+        width: 90%;
+        text-align: center;
+        position: absolute;
+        content: '';
+        left: 40px;
+        bottom: 0;
+    }
+    .intro_contents {
+        top: 80% !important;
+    }
+    .anim_box {
+        height: 85%;
+    }
+    .about_skills {
+        top: 60% !important;
+        right: 30px;
+        width: 60%;
+    }
+    .serv_items .serv::after {
+        width: 80%;
+    }
+    .serv_items .serv::before {
+        width: 80%;
+    }
+    .text_m{
+        padding-bottom: 0px;
+    }
 }
